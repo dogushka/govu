@@ -136,7 +136,7 @@ close.addEventListener("click",function(){
   loginPopup.classList.remove("show");
 })
 
-var end = Date.now() + (15 * 600);
+var end = Date.now() + (15 * 400);
 
 // go Buckeyes!
 var colors = ['#ADFF2F', '#bb0000', '#ffffff'];
