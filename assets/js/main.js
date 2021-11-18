@@ -105,3 +105,59 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+const loginPopup = document.querySelector(".login-popup");
+const close = document.querySelector(".close");
+
+
+window.addEventListener("load",function(){
+
+ showPopup();
+ // setTimeout(function(){
+ //   loginPopup.classList.add("show");
+ // },5000)
+
+})
+
+function showPopup(){
+      const timeLimit = 1 // seconds;
+      let i=0;
+      const timer = setInterval(function(){
+       i++;
+       if(i == timeLimit){
+        clearInterval(timer);
+        loginPopup.classList.add("show");
+       } 
+       console.log(i)
+      },1000);
+}
+
+close.addEventListener("click",function(){
+  loginPopup.classList.remove("show");
+})
+
+var end = Date.now() + (15 * 600);
+
+// go Buckeyes!
+var colors = ['#ADFF2F', '#bb0000', '#ffffff'];
+
+(function frame() {
+  confetti({
+    particleCount: 3,
+    angle: 60,
+    spread: 55,
+    origin: { x: 0 },
+    colors: colors
+  });
+  confetti({
+    particleCount: 3,
+    angle: 120,
+    spread: 55,
+    origin: { x: 1 },
+    colors: colors
+  });
+
+  if (Date.now() < end) {
+    requestAnimationFrame(frame);
+  }
+}());
