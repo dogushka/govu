@@ -106,6 +106,7 @@ sr.reveal(`.home__data, .home__img,
     interval: 200
 })
 
+
 const loginPopup = document.querySelector(".login-popup");
 const close = document.querySelector(".close");
 
@@ -136,7 +137,7 @@ close.addEventListener("click",function(){
   loginPopup.classList.remove("show");
 })
 
-var end = Date.now() + (15 * 400);
+var end = Date.now() + (15 * 200);
 
 // go Buckeyes!
 var colors = ['#ADFF2F', '#bb0000', '#ffffff'];
