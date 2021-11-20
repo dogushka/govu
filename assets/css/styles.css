@@ -631,7 +631,7 @@ text{
   opacity: 1;
 }
 .login-popup .box{
-  background-color:#00FA9A;
+  background-color:var(--body-color);
   width: 750px;
   position: absolute;
   left: 50%;
@@ -643,6 +643,7 @@ text{
   margin-left: 50px;
   transition: all 1s ease;
   border-radius: 30px;
+  box-shadow:  40px 30px 70px #000000;
 }
 .login-popup.show .box{
   opacity: 1;
@@ -689,7 +690,7 @@ text{
 }
 
 .login-popup .box .form h1{
-  color: black;
+  color: var(--text-color);
   font-size: 30px;
   margin:0 0 30px;
 }
@@ -724,7 +725,7 @@ text{
 }
 
 .title__blog{
-  color: black;
+  color: var(--text-color);
 }
 
 /*responsive*/
