@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>CandyLands</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="" class="nav__logo-img"> 
+                    CandyLands
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Ивент</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#santa" class="nav__link">Тайный Санта</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+
+                    <img src="assets/img/nav-light.png" alt="" class="nav__img">
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">С наступающим <br> Новым Годом!</h1>
+                        <p class="home__description">
+                            Этот таймер показывает на сколько готов <b>Новогодний Ивент.</b> <br> Он состоится <b>26 декабря 2021 года в 19:00</b>
+                        </p>
+                        <div class="progress">
+                            <span class="progress-bar" style="width: 27%"></span>
+                          </div>
+                          <p class="home__description">
+                            <b>Ивент готов на:</b> <i>27%</i>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CELEBRATE ====================-->
+            <section class="celebrate section container" id="santa">
+                <div class="celebrate__container grid">
+                    <div class="celebrate__data">
+                        <h2 class="section__title celebrate__title">
+                            Тайный Санта
+                        </h2>
+                        <p class="celebrate__description">
+                            Эти праздничные дни, празднуйте с большой любовью и миром! Дарите подарки
+                            игрокам, чьи ники вам выпадут в рулетке <b>Тайного Санты!</b>
+                        </p>
+                        <a href="#ban" class="button">Подробнее...</a>
+                    </div>
+
+                    <img src="assets/img/celebrate.png" alt="" class="celebrate__img">
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="">
+            <span class="footer__copy">&#169; dogushka. Все права защищены</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+<!---Разметка для модального окна---->	
+<div id="ban" class="iw-modal">
+    <div class="iw-modal-wrapper">
+    <div class="iw-CSS-modal-inner">
+    <div class="iw-modal-header">
+    <h3 class="iw-modal-title">О ивенте <b>Тайный Санта!</b></h3>
+    <a href="#close" title="Закрыть" class="iw-close">×</a>
+    </div>
+    <div class="iw-modal-text">    
+    <p><b>Тайный Санта или Секретный Санта -</b> это рождественская церемония анонимного обмена подарками группой людей.
+    Кинуть свою заявку можно будет на ивенте, который состоится <b>26 декабря 2021 года в 19:00!</b>
+    <br>
+    <br>
+    <i><u>А что мне надо сделать, чтобы участовать?</u></i>
+    <br>
+    <i><q>В назначенную дату вам нужно будет прийти с бумажкой, на которой написан ваш ник. 
+    Далее отправить её в специальный сундук и ждать сообщение от человека, которому выпал ваш листочек♥</q></i>
+    <br>
+    <br>
+    <i><u>А как получить ник игрока, которому я хочу подарить подарок?</u></i>
+    <br>
+    <i><q>Для этого в определённое время вы должны будете нажать на кнопку, которая рандомно выдаст бумажку с ником игрока.
+        Именно ему нужно будет написать в лс и подарить какой-то подарок!</q></i></p>
+    </div>
+    </div>
+    </div>	
+    </div>
+    <!---end.Разметка для модального окна---->	
+    </body>
+</html>
